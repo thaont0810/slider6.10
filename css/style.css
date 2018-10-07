@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+
+}
+
+ul li {
+  width: 100%;
+  float: left;
+  display: block;
+  left: 100%;
+  position: absolute;
+  height: 500px;
+
+}
+
+button {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  padding: 10px;
+  background: rgb(114, 1, 1);
+  border: none;
+  color: #fff;
+  z-index: 9;
+}
+
+.button--prev {
+  left: 0;
+}
+
+.button--next {
+  right: 0;
+}
+
+.item__content {
+  position: absolute;
+  top: 40%;
+  background: #c55a2e;
+  padding: 20px 50px;
+  left: 40%;
+  font-size: 30px;
+}
+
+.slideInLeft {
+  left: 100%;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  100% {
+    left: 0;
+  }
+}
+
+.slideOutRight {
+  animation: slideOutRight 1s forwards;
+}
+
+@keyframes slideOutRight {
+  100% {
+    left: 100%;
+  }
+}
+
+.slideInRight {
+  left: -100%;
+  animation: slideIn 1s forwards;
+}
+
+
+.slideOutLeft {
+  animation: slideOutLeft 1s forwards;
+}
+
+@keyframes slideOutLeft {
+  100% {
+    left: -100%;
+  }
+}
